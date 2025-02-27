@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Face Recognition App</h1>
+      <h1>Face Recognition Prototype</h1>
       {modelsLoaded ? (
         <FaceRecognition
           videoRef={videoRef}
