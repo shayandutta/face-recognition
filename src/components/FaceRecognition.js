@@ -81,7 +81,7 @@ const FaceRecognition = ({ videoRef, handleVideoOnPlay, detections }) => {
       const formData = new FormData();
       formData.append('image', blob, 'capture.jpg');
 
-      fetch('http://localhost:5000/upload', {
+      fetch('https://face-recognition-lovat.vercel.app/upload', {
         method: 'POST',
         body: formData,
       })
