@@ -32,7 +32,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
 
   console.log("Received file:", req.file);
 
-  const fileUrl = `http://localhost:${PORT}/${req.file.filename}`;
+  const fileUrl = `https://face-recognition-lovat.vercel.app/${req.file.filename}`;
   res.status(200).json({ fileName: req.file.filename, filePath: fileUrl });
 });
 
